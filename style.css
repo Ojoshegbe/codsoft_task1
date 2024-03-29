@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+}
+
+header{
+    position: relative;
+    max-width: 100%;
+    /* background: #e59a60; */
+     /* background: #9f496e ; */
+    background-color: #fff;
+    color: #fff;
+}
+
+nav{
+ position: fixed;
+ top: 0;
+ left: 0;
+ border: 2px groove greenyellow;
+ padding: 10px;
+ border-radius: 20px;
+ background: transparent;
+ display: grid;
+ z-index: 100;
+ 
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: greenyellow;
+    
+}
+
+nav ul li a i:hover{
+    box-shadow: 1px 1px 20px 10px greenyellow;
+    background-color: greenyellow;
+    color: #fff;
+}
+
+#Home{
+    width: 10%;
+   max-height: 10vh;
+    /* background: #e59a60; */
+    /* background: #9f496e ; */
+    background: #2f365f;
+    border-bottom-left-radius: 200rem;
+    border-bottom-right-radius: 200rem;
+    animation: show-off 1s linear .2s 1 forwards ;
+    
+}
+
+@keyframes show-off {
+    to{
+        width: 100%;
+        max-height: 100vh;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        
+    }
+}
+
+
+.swiper {
+   max-width: 100%;
+  }
+
+  .swiper-slide {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .flex-home{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    padding: 20px;
+    margin: 15% auto;
+    gap: 10%;
+  }
+
+  #About{
+    /* width: 100%; */
+    color: #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* background-color: red; */
+  }
+
+  h1{
+    text-align: center;
+  }
+  .about-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+  }
+
+  .about-dev .about-text{
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .about-dev .about-img{
+    width: auto;
+    margin-right: 5%;
+  }
+
+
+  #Skills{
+    /* width: 100%; */
+    text-align: center;
+    background-color: #2f365f;
+    color: #fff;
+    padding-top: 25px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+  }
+
+  .skills-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap:  wrap;
+    margin-top: 5rem;
+  }
+
+  .skill img{
+    width: 70%;
+    border-radius: 15px;
+    
+  }
+
+
+  #Projects{
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .project-flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20%;
+    flex-wrap: wrap;
+  }
+
+  .project-flex .project{
+      position: relative;
+      width: 25%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 3px 5px 15px #2f365f;
+  }
+
+
+  .project-flex .project img{
+    width: 100%;
+    transition: all 0.5s linear;
+  }
+
+  .project-flex .project .proj-info{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 0;
+    visibility: hidden;
+    transition: all 1s linear;
+    
+  }
+
+  
+  .project-flex .project:hover .proj-info{
+    height: 100%;
+    visibility: visible;
+}
+  .project-flex .project:hover img{
+    transform: scale(1.3);
+}
+
+#contact{
+    max-width: 100%;
+    background: #2f365f;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    color: white;
+    padding-bottom: 50px;
+}
+
+#contact h1{
+    color: white;
+    padding: 50px 0;
+}
+
+#contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+.contact-right form input, textarea{
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: 1px groove #fff;
+    outline: none;
+    resize: none;
+    text-indent: 12px;
+}
+
+ .contact-left .btn2 {
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.contact-right .btn2{
+    padding: 10px 15px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: all .5s linear;
+}
+.contact-right .btn2:hover{
+    background-color: greenyellow;
+    color: white;
+}
+
+hr{
+    color: #fff;
+}
+
+
+.footer{
+    background: #2f365f;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+
+@media screen and (width <= 600px){
+ 
+}
+
+
+
+  
+
+  
